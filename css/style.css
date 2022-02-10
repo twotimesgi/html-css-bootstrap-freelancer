@@ -13,7 +13,7 @@
 
 header{
     background-color: rgb(47,62,78);
-    height: 80px;
+    height: 60px;
 }
 
 header nav{
@@ -24,42 +24,65 @@ header .row{
     height: 100%;
 }
 
-[class*="col"]{
+header [class*="col"]{
     height: 100%;
 }
 
 .hero.container-fluid{
     background-color: rgb(85, 185, 157);
+    padding: 50px 0;
 }
 
-.hero .container-fluid .container{
+.hero.container-fluid .container{
     height: 100%;
 }
 
-.hero .row:nth-child(1){
+.portfolio.container-fluid{
+    padding: 50px 0;
+}
+
+[class*="col"]{
     height: 200px;
 }
 
-.hero .row{
-    height: calc(200px / 3);
+.heading-box{
+    height: 100px;
 }
-
-.portfolio .row{
-    height: 350px;
-}
-
-.portfolio .row:nth-child(1), .portfolio .row:nth-child(2){
+.card-box{
+    height: 200px;
+} 
+.button-box{
     height: 50px;
+}
+.p-box{
+    height: 200px;
+}
+.form-box{
+    height: 300px;
 }
 
 .about.container-fluid{
-    height: 600px;
     background-color: rgb(85, 185, 157);
+    padding: 80px 0;
 }
 
-.about .row{
-    height: 225px;
+.contact.container-fluid{
+    padding: 50px 0;
 }
-.about .row:nth-child(1), .about .row:nth-child(2), .about .row:nth-child(5){
-    height: 50px
+
+
+
+.footer-top.container-fluid{
+    background-color: rgb(63,84,107);
+    padding: 40px 0;
+}
+
+
+
+.footer-bottom.container-fluid{
+    background-color: rgb(47, 62, 78);
+}
+
+.footer-bottom [class*="col"]{
+    height: 100px;
 }
