@@ -29,7 +29,6 @@ header .row{
 }
 
 .hero.container-fluid{
-    height: 400px;
     background-color: rgb(85, 185, 157);
 }
 
@@ -51,4 +50,16 @@ header .row{
 
 .portfolio .row:nth-child(1), .portfolio .row:nth-child(2){
     height: 50px;
+}
+
+.about.container-fluid{
+    height: 600px;
+    background-color: rgb(85, 185, 157);
+}
+
+.about .row{
+    height: 225px;
+}
+.about .row:nth-child(1), .about .row:nth-child(2), .about .row:nth-child(5){
+    height: 50px
 }
