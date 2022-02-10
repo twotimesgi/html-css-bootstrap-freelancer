@@ -1,4 +1,15 @@
 
+.row{
+    border: 1px solid red;
+}
+
+.container{
+    border: 1px solid yellow;
+}
+
+[class*="col"]{
+    border: 1px solid green;
+}
 
 header{
     background-color: rgb(47,62,78);
@@ -6,38 +17,38 @@ header{
 }
 
 header nav{
-    background-color: red;
     height: 100%;
 } 
 
 header .row{
     height: 100%;
-    background-color: yellow;
 }
 
 [class*="col"]{
     height: 100%;
-    background-color: green;
 }
 
 .hero.container-fluid{
     height: 400px;
-    background-color: red;
+    background-color: rgb(85, 185, 157);
 }
 
 .hero .container-fluid .container{
     height: 100%;
-    background-color: blue;
 }
 
 .hero .row:nth-child(1){
     height: 200px;
-    background-color: yellow;
 }
 
 .hero .row{
     height: calc(200px / 3);
-    background-color: yellow;
 }
 
+.portfolio .row{
+    height: 350px;
+}
 
+.portfolio .row:nth-child(1), .portfolio .row:nth-child(2){
+    height: 50px;
+}
