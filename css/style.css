@@ -1,0 +1,17 @@
+
+
+header{
+    background-color: rgb(47,62,78);
+}
+
+nav{
+    background-color: red;
+}
+
+nav > div > div{
+    background-color: green;
+}
+
+.debug{
+height: 50px; /* TODO: Rimuovere altezza*/
+}
