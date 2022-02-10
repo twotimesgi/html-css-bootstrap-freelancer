@@ -2,16 +2,42 @@
 
 header{
     background-color: rgb(47,62,78);
+    height: 80px;
 }
 
-nav{
+header nav{
     background-color: red;
+    height: 100%;
+} 
+
+header .row{
+    height: 100%;
+    background-color: yellow;
 }
 
-nav > div > div{
+[class*="col"]{
+    height: 100%;
     background-color: green;
 }
 
-.debug{
-height: 50px; /* TODO: Rimuovere altezza*/
+.hero.container-fluid{
+    height: 400px;
+    background-color: red;
 }
+
+.hero .container-fluid .container{
+    height: 100%;
+    background-color: blue;
+}
+
+.hero .row:nth-child(1){
+    height: 200px;
+    background-color: yellow;
+}
+
+.hero .row{
+    height: calc(200px / 3);
+    background-color: yellow;
+}
+
+
