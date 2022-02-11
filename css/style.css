@@ -24,3 +24,42 @@
     border-radius: 25px;
     overflow: hidden;
 }
+
+.ms_star{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ms_star--invert{
+    filter: invert(1);
+}
+
+.ms_star img{
+    transform: scale(1.4);
+}
+
+.ms_star::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.ms_star::after{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
