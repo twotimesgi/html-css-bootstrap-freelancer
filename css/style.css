@@ -1,88 +1,26 @@
-
-.row{
-    border: 1px solid red;
+:root{
+    --color-acqua: rgb(85, 185, 157);
+    --color-light-grey: rgb(63,84,107);
+    --color-dark-grey: rgb(47, 62, 78);
+    --color-text-light: rgb(255,255,255);
 }
 
-.container{
-    border: 1px solid yellow;
+.ms_bg-dark-grey{
+    background-color: var(--color-dark-grey);
 }
 
-[class*="col"]{
-    border: 1px solid green;
+.ms_bg-light-grey{
+    background-color: var(--color-light-grey);
 }
 
-header{
-    background-color: rgb(47,62,78);
-    height: 60px;
+.ms_bg-aqua{
+    background-color: var(--color-acqua);
 }
 
-header nav{
-    height: 100%;
-} 
-
-header .row{
-    height: 100%;
-}
-
-header [class*="col"]{
-    height: 100%;
-}
-
-.hero.container-fluid{
-    background-color: rgb(85, 185, 157);
-    padding: 50px 0;
-}
-
-.hero.container-fluid .container{
-    height: 100%;
-}
-
-.portfolio.container-fluid{
-    padding: 50px 0;
-}
-
-[class*="col"]{
-    height: 200px;
-}
-
-.heading-box{
-    height: 100px;
-}
-.card-box{
-    height: 200px;
-} 
-.button-box{
-    height: 50px;
-}
-.p-box{
-    height: 200px;
-}
-.form-box{
+.ms_card{
+    background-color: #777;
+    width: 300px;
     height: 300px;
-}
-
-.about.container-fluid{
-    background-color: rgb(85, 185, 157);
-    padding: 80px 0;
-}
-
-.contact.container-fluid{
-    padding: 50px 0;
-}
-
-
-
-.footer-top.container-fluid{
-    background-color: rgb(63,84,107);
-    padding: 40px 0;
-}
-
-
-
-.footer-bottom.container-fluid{
-    background-color: rgb(47, 62, 78);
-}
-
-.footer-bottom [class*="col"]{
-    height: 100px;
+    border-radius: 25px;
+    overflow: hidden;
 }
