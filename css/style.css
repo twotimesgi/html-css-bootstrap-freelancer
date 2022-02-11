@@ -17,6 +17,13 @@
     background-color: var(--color-acqua);
 }
 
+.ms_contact-btn{
+    background-color: var(--color-acqua) !important;
+}
+
+.ms_contact-btn:hover{
+    filter: brightness(0.8);
+}
 .ms_card{
     background-color: #777;
     border-radius: 25px;
