@@ -25,6 +25,11 @@
     filter: brightness(0.8);
 }
 
+
+main{
+    padding-top: 100px;
+}
+
 .ms_card{
     border-radius: 10px;
     overflow: hidden;
@@ -50,8 +55,6 @@
     transform: translate(-50%,-50%);
     color: white;
 }
-
-
 
 .ms_card img{
     object-fit: contain;
@@ -102,13 +105,19 @@
 
 .social-icon{
     height: 60px;
-    border: 2px solid white;
+    border: 1px solid white;
     width: 60px;
     border-radius: 100%;
     line-height: 50px;
     font-size: 20pt;
     display: inline-block;
     margin: 0 5px;
+    transition: border 0.2s linear, color 0.2s linear;
+}
+
+.social-icon:hover{
+    border: 1px solid rgb(var(--color-acqua));
+    color: rgb(var(--color-acqua));
 }
 
 .social-icon i{
