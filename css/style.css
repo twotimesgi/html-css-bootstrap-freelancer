@@ -1,35 +1,57 @@
 :root{
-    --color-acqua: rgb(85, 185, 157);
-    --color-light-grey: rgb(63,84,107);
-    --color-dark-grey: rgb(47, 62, 78);
-    --color-text-light: rgb(255,255,255);
+    --color-acqua: 85, 185, 157;
+    --color-light-grey: 63,84,107;
+    --color-dark-grey: 47, 62, 78;
+    --color-text-light: 255,255,255;
 }
 
 .ms_bg-dark-grey{
-    background-color: var(--color-dark-grey);
+    background-color: rgb(var(--color-dark-grey));
 }
 
 .ms_bg-light-grey{
-    background-color: var(--color-light-grey);
+    background-color: rgb(var(--color-light-grey));
 }
 
 .ms_bg-aqua{
-    background-color: var(--color-acqua);
+    background-color: rgb(var(--color-acqua));
 }
 
 .ms_contact-btn{
-    background-color: var(--color-acqua) !important;
+    background-color: rgb(var(--color-acqua)) !important;
 }
 
 .ms_contact-btn:hover{
     filter: brightness(0.8);
 }
+
 .ms_card{
-    background-color: #777;
-    border-radius: 25px;
+    border-radius: 10px;
     overflow: hidden;
-    max-width: 415px;
+    position: relative;
 }
+
+.ms_card-overlay{
+    display: none;
+}
+
+.ms_card:hover .ms_card-overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(var(--color-acqua), 0.5);
+    display: block;
+}
+
+.ms_card-overlay i{
+    font-size: 100pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+
 
 .ms_card img{
     object-fit: contain;
@@ -94,6 +116,6 @@
 }
 
 footer a{
-    color: var(--color-acqua) !important;
+    color: rgb(var(--color-acqua)) !important;
     text-decoration: none;
 }
