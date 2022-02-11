@@ -40,10 +40,12 @@
 .ms_star{
     position: relative;
     width: 100px;
-    height: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: auto;
+    line-height: 15pt;
+    margin: 0 auto;
     margin-bottom: 20px;
+    color: black;
+    font-size: 15pt; 
 }
 
 .ms_star--invert{
@@ -74,4 +76,24 @@
     right: -60px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.social-icon{
+    height: 60px;
+    border: 2px solid white;
+    width: 60px;
+    border-radius: 100%;
+    line-height: 50px;
+    font-size: 20pt;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icon i{
+    vertical-align: middle;
+}
+
+footer a{
+    color: var(--color-acqua) !important;
+    text-decoration: none;
 }
